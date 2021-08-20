@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ходжаева В.</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="uk-container">
+        <header class="header uk-flex uk-flex-between">
+            <a href="./index.html" class="header__logo"><img src="img/Logo.svg" alt="Hookah Skills"></a>
+            <nav class="burger"></nav>
+            <a class="burger-btn_open" href="#modal-full" uk-toggle><span class="burger-btn__img"></span>Меню</a>
+            <!-- модальное окно -->
+            <div id="modal-full" class="uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog">
+                    <div class="uk-flex uk-flex-between uk-padding uk-container">
+                        <a href="./index.html" class="header__logo"><img src="img/Logo.svg" alt="Hookah Skills"></a>
+                        <button class="uk-modal-close uk-close modal-full__close" type="button" uk-close>
+                            <span class="uk-margin-small-right modal-full__close">Меню</span>
+                        </button>
+                    </div>
+                    <div class="uk-container-large uk-child-width-1-2@s uk-flex-middle modal-full__nav" uk-grid>
+                        <div class="uk-invisible uk-visible@m" uk-height></div>
+                        <div class="uk-padding burger-list">
+                            <ul class="uk-nav uk-nav-default ">
+                                <li class="burger-list__section">Каталог</li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a class="burger-list__item" href="#modal-buy" uk-toggle>Колбы</a></li>
+                                <li><a class="burger-list__item" href="#modal-buy" uk-toggle>Чаши</a></li>
+                                <li><a class="burger-list__item" href="#modal-buy" uk-toggle class="uk-margin-bottom">Угли</a></li>
+                                <li class="burger-list__section">Разделы</li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a class="burger-list__item" href="#modal-buy" uk-toggle>Контакты</a></li>
+                                <li><a class="burger-list__item" href="#modal-buy" uk-toggle>Оплата</a></li>
+                                <li><a class="burger-list__item" href="#modal-buy" uk-toggle>Доставка</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- модальное окно "купить в один клик" -->
+            <div id="modal-buy" uk-modal>
+                <div class="uk-modal-dialog modal-buy">
+                    
+                    <div class="uk-modal-header">
+                        <h4 class="modal-buy__title">Купить в один клик</h4>
+                        <button class="uk-modal-close-default modal-buy__btn_close" type="button" uk-close></button>
+                    </div>
+                    <div class="uk-modal-body">
+                        <form class="uk-margin form-buy">
+                            <input type="hidden" name="admin_email[]" value="mikha1lova.va@yandex.ru" >
+                            <input type="hidden" name="form_subject" value="Заявка с сайта (тест)" >
+                            <input class="uk-input form-buy" type="text" name="name" placeholder="Имя" data-validate-field="name">
+                            <input class="uk-input form-buy uk-margin-small" type="email" name="email" placeholder="Электронная почта" data-validate-field="email">
+                            <input class="uk-input form-buy__" type="tel" name="phone" placeholder="Телефон" data-validate-field="tel">
+                        </form>
+                    </div>
+                    <button class="modal-buy__btn uk-width-1-1" type="submit">Купить</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main uk-flex uk-flex-middle">
+            <div class="main-navbar uk-width-2-3@m uk-padding-right">
+                <div class="main-navbar__note">Выберите:</div>
+                <ul class="main-navbar__list" uk-switcher="connect: #component-nav; animation: uk-animation-fade">
+                    <li class="main-navbar__item"><a href="">Колбы</a></li>
+                    <li class="main-navbar__item"><a href="">Чаши</a></li>
+                    <li class="main-navbar__item"><a href="">Угли</a></li>
+                </ul>
+            </div>
+            <div class="main-info">
+                <ul id="component-nav" class="uk-switcher">
+                    <!-- колбы -->
+                    <li>
+                        <h2 class="title title__1">Мы создаем качественные</h2>
+                        <h2 class="title title__2"> продукты для кальяна</h2>
+                        <div class="main-info__img flask"></div>
+                        <div class="main-info__img flask-full"></div>
+                    </li>
+
+                    <!-- чаши  -->
+                    <li>
+                        <h1 class="title">Мы создаем качественные продукты<br>для кальяна</h1>
+                        <div class="main-info__img bowl__1"></div>
+                        <div class="main-info__img bowl__2"></div>
+                        <div class="main-info__img bowl__3"></div>
+                    </li>
+
+                    <!-- Угли -->
+                    <li>
+                        <h3 class="title title__1">Мы создаем качественные</h3>
+                        <h3 class="title title__2"> продукты для кальяна</h3>
+                        <div class="main-info__img charcoal"></div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

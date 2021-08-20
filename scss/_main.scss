@@ -1,0 +1,170 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+
+}
+
+.header {
+    padding-top: 24px;
+}
+
+.uk-modal-dialog {
+    height: 100%;
+    background-color: #F4F4F4 !important;
+}
+
+.uk-modal-close-full {
+    top: 35px !important;
+    right: 40px !important;
+}
+
+.modal-full__nav {
+    margin: auto !important;
+}
+
+.modal-full__close {
+    color: #F44336 !important;
+}
+
+.uk-modal-header {
+    background-color: #F4F4F4 !important;
+}
+
+.modal-buy {
+    width: 288px !important;
+    height: 300px;
+}
+
+.modal-buy__title {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #262626;
+}
+
+.modal-buy__btn_close {
+    color: #262626 !important;
+    top: 16px  !important;
+}
+
+.modal-buy__btn {
+    padding: 12px 0;
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #F44336;
+    color: #fff;
+
+}
+
+.burger-list {
+    padding-left: 60px !important;
+}
+
+.burger-list__section {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #767676 !important;
+}
+
+.burger-list__item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #262626 !important;
+}
+
+.burger-list__item:hover {
+    color: #F44336 !important;
+
+}
+
+.title {
+    font-weight: 700;
+    font-size: 127px;
+    line-height: 150px;
+}
+
+.main-navbar__note {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A0A0A0;
+}
+
+.main-navbar__item {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 62px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.main-navbar__item:hover {
+    color: #F44336;
+    outline: none;
+}
+
+.main-info {
+    position: relative;
+
+}
+
+.main-info__img {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bowl__1 {
+    background-image: url("./../img/bowl-1.png");
+    width: 278px;
+    height: 314px;
+    right: 412px;
+    top: 37px;
+    z-index: 5;
+}
+
+.bowl__2 {
+    background-image: url("./../img/bowl-2.png");
+    width: 263px;
+    height: 312px;
+    left: 534px;
+    top: 213px;
+    z-index: 3;
+}
+
+.bowl__3 {
+    background-image: url("./../img/bowl-3.png");
+    width: 236px;
+    height: 243px;
+    left: -9px;
+    top: 390px;
+    z-index: 3;
+}
+
+.title__1 {
+    position: relative;
+    z-index: 5;
+}
+
+.flask {
+    background-image: url("./../img/flask.png");
+    width: 384px;
+    height: 725px;
+    left: -2px;
+    top: -64px;
+    z-index: 2;
+}
+
+.charcoal {
+    background-image: url("./../img/charcoal.png");
+    width: 654px;
+    height: 455px;
+    left: 18px;
+    top: 90px;
+}
